@@ -27,8 +27,8 @@ const page = async ({ params }: PageProps) => {
 					{blog.img && (
 						<Image
 							alt='thumbnail'
-							width={500}
-							height={100}
+							width={720}
+							height={480}
 							src={blog.img}
 							className='w-full h-[300px] object-cover'
 						></Image>
