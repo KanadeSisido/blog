@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { format, formatDate } from "date-fns";
+import { formatDate } from "date-fns";
 import { Badge } from "./ui/badge";
 import { Post } from "@/types/types";
 import { noto_sans_jp_400 } from "@/lib/fonts";

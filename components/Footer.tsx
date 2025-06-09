@@ -1,5 +1,4 @@
 import React from "react";
-import { Roboto_Mono } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { roboto_mono_400 } from "@/lib/fonts";
 

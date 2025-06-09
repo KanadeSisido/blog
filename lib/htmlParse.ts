@@ -13,6 +13,6 @@ export function HtmlText(rawhtml: string) {
 	const root = new JSDOM(sanitizedHtml);
 	root.window.document
 		.querySelectorAll("style, script")
-		.forEach((elem: any) => elem.remove());
+		.forEach((elem: Element) => elem.remove());
 	return root.window.document.body.textContent ?? "";
 }

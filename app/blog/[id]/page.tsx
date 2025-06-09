@@ -7,14 +7,9 @@ import Image from "next/image";
 import { noto_sans_jp_400, noto_sans_jp_500 } from "@/lib/fonts";
 import { HtmlElement } from "@/lib/htmlParse";
 import { fetchBlogById } from "@/lib/fetch";
+import { PageProps } from "@/.next/types/app/page";
 
-type Props = {
-	params: {
-		id: string;
-	};
-};
-
-const page = async ({ params }: Props) => {
+const page = async ({ params }: PageProps) => {
 	// Nextjs: dynamic params is asynchronos
 	// https://nextjs.org/docs/messages/sync-dynamic-apis
 
