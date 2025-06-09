@@ -56,7 +56,7 @@ const page = async ({ params }: PageProps) => {
 				<div
 					className={cn(
 						noto_sans_jp_400.className,
-						"py-10 px-3 prose-sm  xl:prose"
+						"py-10 px-3 prose w-full max-w-full"
 					)}
 				>
 					{element}
