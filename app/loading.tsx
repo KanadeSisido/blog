@@ -1,3 +1,4 @@
+"use client";
 import { noto_sans_jp_300, noto_sans_jp_500 } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 
