@@ -46,7 +46,13 @@ const NavMenu = ({ className }: { className: string }) => {
 			<NavigationMenuList>
 				<NavigationMenuItem>
 					<NavigationMenuLink asChild>
-						<Link href='/blog' className={navigationMenuTriggerStyle()}>
+						<Link
+							href='/blog'
+							className={cn(
+								navigationMenuTriggerStyle(),
+								"active:text-gray-700 active:underline"
+							)}
+						>
 							Blog
 						</Link>
 					</NavigationMenuLink>
@@ -54,7 +60,13 @@ const NavMenu = ({ className }: { className: string }) => {
 
 				<NavigationMenuItem>
 					<NavigationMenuLink asChild>
-						<Link href='/recommend' className={navigationMenuTriggerStyle()}>
+						<Link
+							href='/recommend'
+							className={cn(
+								navigationMenuTriggerStyle(),
+								"active:text-gray-700 active:underline"
+							)}
+						>
 							Recommend
 						</Link>
 					</NavigationMenuLink>

@@ -48,7 +48,10 @@ export default async function Home() {
 					<div className='flex items-center gap-5'>
 						<Link
 							href='/blog'
-							className={cn(noto_sans_jp_500.className, "text-2xl")}
+							className={cn(
+								noto_sans_jp_500.className,
+								"text-2xl active:text-gray-700 active:underline"
+							)}
 						>
 							Blog
 						</Link>
@@ -86,7 +89,10 @@ export default async function Home() {
 					<div className='flex items-center gap-5'>
 						<Link
 							href='/recommend'
-							className={cn(noto_sans_jp_500.className, "text-2xl")}
+							className={cn(
+								noto_sans_jp_500.className,
+								"text-2xl active:text-gray-700 active:underline"
+							)}
 						>
 							Recommend
 						</Link>

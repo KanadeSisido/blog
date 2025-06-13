@@ -15,7 +15,7 @@ const PostCard: React.FC<{ href: string; detail: Post }> = ({
 	return (
 		<div className='w-full h-full'>
 			<Link href={href}>
-				<Card className='w-full pt-0 overflow-hidden'>
+				<Card className='w-full pt-0 overflow-hidden active:bg-gray-100 hover:bg-gray-50'>
 					{detail.img ? (
 						<Image
 							src={detail.img}
@@ -28,7 +28,9 @@ const PostCard: React.FC<{ href: string; detail: Post }> = ({
 						<div className='dummy-image w-full h-54 bg-pink-600'></div>
 					)}
 					<CardHeader>
-						<CardTitle className='text-2xl truncate'>{detail.title}</CardTitle>
+						<CardTitle className='text-2xl truncate active:text-gray-700 active:underline'>
+							{detail.title}
+						</CardTitle>
 						<div className='flex items-center'>
 							{detail.tag && (
 								<Badge variant='secondary' className='mr-2'>
