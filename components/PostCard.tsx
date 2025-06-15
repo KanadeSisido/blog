@@ -20,8 +20,8 @@ const PostCard: React.FC<{ href: string; detail: Post }> = ({
 						<Image
 							src={detail.img}
 							alt='thumbNail'
-							width={200}
-							height={216}
+							width={400}
+							height={300}
 							className='w-full h-54 object-cover'
 						></Image>
 					) : (
