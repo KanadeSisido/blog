@@ -31,6 +31,11 @@ export const fetchAllBlog = cache(async () => {
 
 export const fetchBlogById = cache(async (id: string) => {
 	const data = await fetchApi(`${process.env.MICRO_CMS_URL}/blog/${id}`);
+
+	if (!data || !data.ok) {
+		notFound();
+	}
+
 	const json: dbPost | null = await data.json();
 
 	if (!json) {
